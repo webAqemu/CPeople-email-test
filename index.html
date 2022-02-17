@@ -36,16 +36,148 @@
 			mso-table-rspace: 0pt;
 		}
 
+        .table-bordered {
+            border-bottom: 1px solid #e1e1e3;
+        }
+
+        .bordered {
+            border-bottom: 1px solid #e1e1e3;
+            border-top: 1px solid #e1e1e3;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
         .header-td {
             padding-top: 20px;
             padding-bottom: 20px;
+        }
+
+        .text-td {
+            text-align: left;
+            padding-top: 45px;
+            padding-bottom: 35px;
+        }
+
+        .title {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            color: #2B2D33;
+        }
+
+        .subtitle {
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #2B2D33;
+        }
+
+        .info {
+            font-size: 10px;
+            line-height: 11px;
+            color: #808185;
+            opacity: 0.5;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .copyright {
+            font-size: 11px;
+            line-height: 18px;
+            color: #2B2D33;
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+
+        .adv-subtitle {
+            font-size: 20px;
+            line-height: 20px;
+            margin-top: 20px;
+            margin-bottom: 0;
+            color: #2B2D33;
+
+        }
+
+        .adv-text {
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 0;
+            margin-bottom: 45px;
+            color: #808185;
+        }
+
+        .adv-item {
+            width: 250px;
+        }
+
+        .adv-item:nth-child(1) {
+            padding-right: 20px;
+        }
+
+        .adv-item img {
+            margin-bottom: 40px;
+        }
+
+        .adv-item img:nth-child(1) {
+            margin-bottom: 30px;
+        }
+
+        .btn-td {
+            padding-bottom: 50px;
+        }
+
+        .contacts-td {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .info-td {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .btn {
+            display: block;
+            width: 135px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 30px;
+            padding-right: 30px;
+            text-decoration: none;
+            color: #2B2D33;
+            font-size: 18px;
+            line-height: 24px;
+            background-color: #FEE600;
+            border-radius: 10px;
+        }
+
+        .contacts-text {
+            font-size: 13px;
+            line-height: 30px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .contacts-link {
+            font-size: 20px;
+            line-height: 30px;
+            color: #2B2D33;
+            text-decoration: none;
+        }
+        .contacts-website {
+            display: block;
+            color: #00AAFF;
+            font-size: 13px;
+            line-height: 30px;
+            text-decoration: none;
         }
 	</style>
 </head>
 
 <body style="margin: 0; padding: 0;">
 	<div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Тестовое письмо</div>
-	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#000000">
         <tr>
             <td height="20" width="600"></td>
         </tr>
@@ -54,7 +186,7 @@
                 <table class="main table-600" cellpadding="0" cellspacing="0" width="600" align="center" bgcolor="#ffffff">
                     <tr>
                         <td>
-                            <table class="header table-600" cellpadding="0" cellspacing="0" width="600" align="center" bgcolor="#fee600">
+                            <table class="header" cellpadding="0" cellspacing="0" width="600" align="center" bgcolor="#fee600">
                                 <tr>
                                     <td class="header-td">
                                         <table class="table-560" cellpadding="0" cellspacing="0" width="560" align="center">
@@ -72,16 +204,182 @@
                             </table>
                         </td>
                     </tr>
+                    <tr>
+                        <td class="banner-td" align="center">
+                            <a href="#">
+                                <img src="https://raw.githubusercontent.com/webAqemu/CPeople-email-test/main/promo.jpg" alt="banner"/>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-td">
+                            <table class="table-520" cellpadding="0" cellspacing="0" width="520" align="center">
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, Helvetica, sans-serif; line-height: 22px; margin-top: 0; margin-bottom: 0;">
+                                            Олег, откройте карту до 31 декабря 2020 года и покупайте по карте <br/>
+                                            без процентов и навсегда забудьте про обслуживание.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="adv-td">
+                            <table class="table-520 table-bordered" cellpadding="0" cellspacing="0" width="520" align="center">
+                                <tr>
+                                    <td align="center">
+                                        <img src="https://raw.githubusercontent.com/webAqemu/CPeople-email-test/main/adv-1.jpg" alt="advantage icon">
+                                        <p class="adv-subtitle" style="font-family: Arial, Helvetica, sans-serif;">110 дней</p>
+                                        <p class="adv-text" style="font-family: Arial, Helvetica, sans-serif;">без процентов на всё</p>
+                                    </td>
+                                    <td align="center">
+                                        <img src="https://raw.githubusercontent.com/webAqemu/CPeople-email-test/main/adv-2.jpg" alt="advantage icon">
+                                        <p class="adv-subtitle" style="font-family: Arial, Helvetica, sans-serif;">до 600 000 ₽</p>
+                                        <p class="adv-text" style="font-family: Arial, Helvetica, sans-serif;">ваш кредитный лимит</p>
+                                    </td>
+                                    <td align="center">
+                                        <img src="https://raw.githubusercontent.com/webAqemu/CPeople-email-test/main/adv-3.jpg" alt="advantage icon">
+                                        <p class="adv-subtitle" style="font-family: Arial, Helvetica, sans-serif;">бесплатно</p>
+                                        <p class="adv-text" style="font-family: Arial, Helvetica, sans-serif;">обслуживание и снятие</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title-td">
+                            <table class="table-520" cellpadding="0" cellspacing="0" width="520" align="center">
+                                <tr>
+                                    <td>
+                                        <p class="title" style="font-family: Arial, Helvetica, sans-serif;">
+                                            Кредитная карта с бесплатной доставкой
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="adv-td">
+                            <table class="table-520 table-bordered" cellpadding="0" cellspacing="0" width="520" align="center">
+                                <tr>
+                                    <td align="left" class="adv-item">
+                                        <img src="https://raw.githubusercontent.com/webAqemu/CPeople-email-test/main/adv-4.png" alt="advantage icon">
+                                        <img src="https://raw.githubusercontent.com/webAqemu/CPeople-email-test/main/adv-5.png" alt="advantage icon">
+                                    </td>
+                                    <td align="left" class="adv-item">
+                                        <img src="https://raw.githubusercontent.com/webAqemu/CPeople-email-test/main/adv-6.png" alt="advantage icon">
+                                        <img src="https://raw.githubusercontent.com/webAqemu/CPeople-email-test/main/adv-7.png" alt="advantage icon">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title-td">
+                            <table class="table-520" cellpadding="0" cellspacing="0" width="520" align="center">
+                                <tr>
+                                    <td align="center">
+                                        <p class="title" style="font-family: Arial, Helvetica, sans-serif;">
+                                            Начните получать выгоду прямо сейчас!
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="btn-td">
+                            <table class="table-520" cellpadding="0" cellspacing="0" width="520" align="center">
+                                <tr>
+                                    <td align="center">
+                                        <a href="#" class="btn" style="font-family: Arial, Helvetica, sans-serif;">
+                                            Получить карту
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center" bgcolor="#f4f4f4">
+                                <tr>
+                                    <td class="contacts-td">
+                                        <table class="table-520" cellpadding="0" cellspacing="0" width="520" align="center">
+                                            <tr valign="top">
+                                                <td>
+                                                    <p class="contacts-text" style="font-family: Arial, Helvetica, sans-serif;">Телефон в Москве:</p>
+                                                    <a href="telto:+74957755575" class="contacts-link" style="font-family: Arial, Helvetica, sans-serif;">
+                                                        +7 495 775 55 75
+                                                    </a>
+                                                    <a href="https://raiffeisen.ru" class="contacts-website" style="font-family: Arial, Helvetica, sans-serif;">
+                                                        raiffeisen.ru
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <p class="contacts-text" style="font-family: Arial, Helvetica, sans-serif;">Бесплатно по России:</p>
+                                                    <a href="telto:88007006401" class="contacts-link" style="font-family: Arial, Helvetica, sans-serif;">
+                                                        8 800 700 64 01
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="info-td">
+                            <table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                                <tr>
+                                    <td>
+                                        <table class="table-520" cellpadding="0" cellspacing="0" width="520" align="center">
+                                            <tr>
+                                                <td>
+                                                    <p class="subtitle" style="font-family: Arial, Helvetica, sans-serif;">Ваш Райффайзенбанк</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bordered">
+                                        <table class="table-520" cellpadding="0" cellspacing="0" width="520" align="center">
+                                            <tr>
+                                                <td>
+                                                    <p class="info" style="font-family: Arial, Helvetica, sans-serif;">Ставка 10,99% действует для клиентов, которые на момент заключения договора с банком участвуют в программе страхования жизни от несчастных случаев и болезней, на случай дожития до события потери работы заемщиков потребительских кредитов АО «Райффайзенбанк» (далее — программа финансовой защиты) для кредитов на сумму от 1 млн до 2 млн руб. (для Москвы и МО, Санкт-Петербурга и ЛО) / от 700 000 до 1 млн руб. для остальных регионов. При сумме кредита от 500 000 до 999 000 руб. (для Москвы и МО, Санкт- Петербурга и ЛО) / от 300 000 до 699 000 руб. (для остальных регионов) действует ставка 11,99%. При сумме кредита от 90 000 до 499 000 руб. (для Москвы и МО, Санкт- Петербурга и ЛО) / от 90 000 до 299 000 руб. (для остальных регионов) действует ставка 12,99%. В случае прекращения участия заемщика в программе финансовой защиты процентная ставка увеличивается от 3 до 4 п. п. Кредитный договор действует до исполнения сторонами своих обязательств. Срок возврата кредита — от 13 до 60 мес. Банк принимает решение о заключении кредитного договора индивидуально по результатам проведенной оценки кредитоспособности клиента. Информация действительна на 01.07.19. АО «Райффайзенбанк». 0+</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table class="table-520" cellpadding="0" cellspacing="0" width="520" align="center">
+                                            <tr>
+                                                <td>
+                                                    <p class="copyright" style="font-family: Arial, Helvetica, sans-serif;">
+                                                        © АО «Райффайзенбанк» <br/>
+                                                        Генеральная лицензия Банка России № 3292 от 17.02.2015. <br/>
+                                                        Юридический адрес: 129090, Москва, ул. Троицкая, д. 17, стр. 1 <br/>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
                 </table>
+
             </td>
         </tr>
-        <tr>
-            <td class="banner-td" align="center">
-                <a href="#">
-                    <img src="https://raw.githubusercontent.com/webAqemu/CPeople-email-test/main/promo.jpg" alt="banner"/>
-                </a>
-            </td>
-        </tr>
+        
 	</table>
 </body>
 
