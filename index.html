@@ -145,6 +145,51 @@
             font-size: 13px;
             text-decoration: none;
         }
+
+        td.mobile {
+            display: none !important;
+        }
+
+        @media (max-width: 620px) {
+            .desktop {
+                display: none !important;
+            }
+            
+            .table-600 {
+                width: 320px !important;
+            }
+            .table-520,
+            .table-560 {
+                width: 288px !important;
+            }
+
+            .slogan {
+                display: none;
+            }
+
+            .adv-item {
+                padding-right: 0 !important;
+            }
+
+            .adv-td td,
+            .adv-list td {
+                display: block !important;
+                text-align: center !important;
+            }
+
+            .contacts-td td {
+                display: block !important;
+                text-align: left !important;
+            }
+
+            .adv-td img {
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        }
 	</style>
 </head>
 
@@ -159,7 +204,7 @@
                 <table class="main table-600" cellpadding="0" cellspacing="0" width="600" align="center" bgcolor="#ffffff">
                     <tr>
                         <td>
-                            <table class="header" cellpadding="0" cellspacing="0" width="600" align="center" bgcolor="#fee600">
+                            <table class="header table-600" cellpadding="0" cellspacing="0" width="600" align="center" bgcolor="#fee600">
                                 <tr>
                                     <td class="header-td">
                                         <table class="table-560" cellpadding="0" cellspacing="0" width="560" align="center">
@@ -178,9 +223,12 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="banner-td" align="center">
-                            <a href="#">
+                        <td class="banner-td table-600" align="center">
+                            <a class="desktop" href="#">
                                 <img src="https://raw.githubusercontent.com/webAqemu/CPeople-email-test/main/promo.jpg" alt="banner"/>
+                            </a>
+                            <a class="mobile" href="#">
+                                <img src="https://raw.githubusercontent.com/webAqemu/CPeople-email-test/main/promo-mobile.jpg" alt="banner"/>
                             </a>
                         </td>
                     </tr>
@@ -235,23 +283,25 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="adv-td">
+                        <td class="adv-list">
                             <table class="table-520 table-bordered" cellpadding="0" cellspacing="0" width="520" align="center">
                                 <tr>
                                     <td align="left" class="adv-item">
                                         <img src="https://raw.githubusercontent.com/webAqemu/CPeople-email-test/main/adv-4.png" alt="advantage icon">
                                     </td>
+                                    <td class="mobile" height="20"></td>
                                     <td align="right" class="adv-item">
                                         <img src="https://raw.githubusercontent.com/webAqemu/CPeople-email-test/main/adv-6.png" alt="advantage icon">
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td height="30"></td>
+                                    <td class="mobile-20" height="30"></td>
                                 </tr>
                                 <tr>
                                     <td align="left" class="adv-item">
                                         <img src="https://raw.githubusercontent.com/webAqemu/CPeople-email-test/main/adv-5.png" alt="advantage icon">
                                     </td>
+                                    <td class="mobile" height="20"></td>
                                     <td align="right" class="adv-item">
                                         <img src="https://raw.githubusercontent.com/webAqemu/CPeople-email-test/main/adv-7.png" alt="advantage icon">
                                     </td>
@@ -321,6 +371,9 @@
                                                                     raiffeisen.ru
                                                                 </a>
                                                             </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="mobile" height="20"></td>
                                                         </tr>
                                                     </table>
                                                 </td>
